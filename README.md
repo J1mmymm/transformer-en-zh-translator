@@ -22,7 +22,7 @@
 
 ![BLEU and chrF++ comparison](results/figures/metric_comparison.png)
 
-这些结果只适用于固定的本地课程划分，并不代表通用领域或长文本翻译质量。微调模型在该划分上的 BLEU 比 zero-shot 提高 10.6888。
+这些结果只适用于当前数据集，并不代表通用领域或长文本翻译质量。微调模型在该划分上的 BLEU 比 zero-shot 提高 10.6888。
 
 ## 快速开始
 
@@ -80,7 +80,7 @@ data/test.txt
 English sentence.\t中文译文。
 ```
 
-原课程划分包含 26,918 对训练语料和 2,991 对测试语料；脚本用种子 2026 从训练语料中固定划出 1,345 对验证集。课程包未保留逐句作者署名字段，因此本仓库不直接再分发语料。详见 [data/README.md](data/README.md)。
+原语料数据包含 26,918 对训练语料和 2,991 对测试语料；脚本用种子 2026 从训练语料中固定划出 1,345 对验证集。详见 [data/README.md](data/README.md)。
 
 ### 2. 运行
 
@@ -155,9 +155,9 @@ model, src_vocab, tgt_vocab, metadata = load_scratch_checkpoint(path)
 
 ## 数据、许可与隐私说明
 
-语句内容与 Tatoeba/ManyThings 英文–普通话集合高度一致。Tatoeba 文本使用 CC BY 2.0 FR，并要求保留作者归属；由于课程版 `train.txt` / `test.txt` 不含逐句 ID 和作者字段，本开源版只发布代码、聚合结果和模型权重，不发布语料或逐句预测文件。
+本开源版只发布代码、聚合结果和模型权重，不发布语料或逐句预测文件。
 
-基础 MarianMT 模型为 Apache-2.0；本仓库代码和派生模型也以 Apache-2.0 发布。公开版排除了课程压缩包、第三方依赖副本、缓存、重复基础模型、含个人姓名/学号的作业报告以及本地日志。
+基础 MarianMT 模型为 Apache-2.0；本仓库代码和派生模型也以 Apache-2.0 发布。
 
 ## 局限性
 
