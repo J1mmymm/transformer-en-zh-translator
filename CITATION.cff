@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite the repository."
+title: "Transformer English-to-Chinese Translator"
+type: software
+authors:
+  - alias: J1mmymm
+version: 1.0.0
+date-released: 2026-08-10
+url: "https://github.com/J1mmymm/transformer-en-zh-translator"
+repository-code: "https://github.com/J1mmymm/transformer-en-zh-translator"
+license: Apache-2.0
+

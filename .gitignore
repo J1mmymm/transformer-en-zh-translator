@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local corpora and downloaded base models
+data/*
+!data/README.md
+model_en_zh/
+
+# Training artifacts and model weights live on Hugging Face
+outputs/checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Local-only logs and editor files
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
