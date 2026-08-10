@@ -1,0 +1,26 @@
+[
+  {
+    "model":"Scratch Transformer",
+    "BLEU":20.5691,
+    "chrF++":16.024,
+    "TER":66.1049,
+    "ExactMatch(%)":3.009,
+    "AvgPredChars":9.5356
+  },
+  {
+    "model":"MarianMT zero-shot",
+    "BLEU":41.7833,
+    "chrF++":28.7659,
+    "TER":41.7261,
+    "ExactMatch(%)":2.1398,
+    "AvgPredChars":8.8435
+  },
+  {
+    "model":"MarianMT fine-tuned",
+    "BLEU":52.4721,
+    "chrF++":39.2654,
+    "TER":30.8395,
+    "ExactMatch(%)":17.8536,
+    "AvgPredChars":9.5496
+  }
+]

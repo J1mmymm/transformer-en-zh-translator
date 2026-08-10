@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transformer-en-zh-translator"
+version = "1.0.0"
+description = "English-to-Chinese translation with a scratch Transformer and a fine-tuned MarianMT model"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "J1mmymm" }]
+dependencies = [
+  "torch>=2.2",
+  "transformers>=4.40,<6",
+  "sentencepiece>=0.2",
+  "safetensors>=0.4",
+]
+
+[project.urls]
+Repository = "https://github.com/J1mmymm/transformer-en-zh-translator"
+Model = "https://huggingface.co/J1mmymm/transformer-en-zh-translator"
+
+[project.scripts]
+en-zh-translate = "en_zh_translator.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["en_zh_translator*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,4 @@
+﻿model,BLEU,chrF++,TER,ExactMatch(%),AvgPredChars
+Scratch Transformer,20.5691,16.024,66.1049,3.009,9.5356
+MarianMT zero-shot,41.7833,28.7659,41.7261,2.1398,8.8435
+MarianMT fine-tuned,52.4721,39.2654,30.8395,17.8536,9.5496

@@ -1,0 +1,8 @@
+torch>=2.2
+transformers>=4.40,<6
+sentencepiece>=0.2
+sacrebleu>=2.4
+pandas>=2.0
+matplotlib>=3.8
+tqdm>=4.66
+safetensors>=0.4

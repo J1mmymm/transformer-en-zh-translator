@@ -1,0 +1,12 @@
+Transformer English-to-Chinese Translator
+Copyright 2026 J1mmymm
+
+This project fine-tunes Helsinki-NLP/opus-mt-en-zh, distributed under the
+Apache License 2.0. The original model is available at:
+https://huggingface.co/Helsinki-NLP/opus-mt-en-zh
+
+The course corpus appears to contain material from the Tatoeba/ManyThings
+English-Mandarin collection. Corpus files are not redistributed in this
+release. Users who prepare their own copy must retain the attribution required
+by the applicable dataset license.
+
